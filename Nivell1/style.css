@@ -1,117 +1,120 @@
 /*para ordenador*/
 
-*{
-    margin: 8px;
-    padding: 8px; 
-    box-sizing: border-box;
-    max-width:1200px;
+* {
+  margin: 8px;
+  padding: 8px;
 }
 
-
-header, footer, article{
-    background-color: black;
+body {
+  max-width: 1200px;
+    margin: 0 auto;
 }
 
-header div.primer{
-    background-color: #2D4159;
-    display: flex;
-    flex-flow: row nowrap;
+header,
+footer,
+article {
+  background-color: black;
 }
 
-.logo, .xxss{
-flex: 1 1 auto;
+header div.primer {
+  background-color: #2d4159;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
-.navegador{
-flex: 6 1 auto;
+.logo,
+.xxss {
+  flex: 1 1 auto;
 }
 
-header div.primer div{
-    background-color: #EA5555;
+.navegador {
+  flex: 6 1 auto;
 }
 
-header div.segon{
-    background-color: #F07B3E;
+header div.primer div {
+  background-color: #ea5555;
 }
 
-header div.segon div{
-    background-color: #FDD460;
+header div.segon {
+  background-color: #f07b3e;
+}
+
+header div.segon div {
+  background-color: #fdd460;
 }
 
 footer div {
-    background-color: #E5AF2D;
+  background-color: #e5af2d;
 }
-article{
-    display: flex;
-}
-
-article section{
-    background-color: #4E4E6A;
-    display:flex;
-    flex: 2 1 auto;
-    flex-flow: row wrap;
-}
-article section div{
-    background-color: #216BB0;
-    display: flex;
-    flex: 1 1 40%;
-}
-div.last{
-    background-color: #70A4C4;
-}
-article aside{
-    background-color: #F73E51;
-    flex: 1 1 auto;
+article {
+  display: flex;
 }
 
-article aside div{
-    background-color: #FEEA84;
+article section {
+  background-color: #4e4e6a;
+  display: flex;
+  flex: 2 1 auto;
+  flex-flow: row wrap;
+}
+article section div {
+  background-color: #216bb0;
+  display: flex;
+  flex: 1 1 40%;
+}
+div.last {
+  background-color: #70a4c4;
+}
+article aside {
+  background-color: #f73e51;
+  flex: 1 1 auto;
+}
+
+article aside div {
+  background-color: #feea84;
 }
 
 /*para tableta*/
 
 @media only screen and (max-width: 800px) {
-   
-    article{
-        background-color: #FDFF03;
-        flex-flow: column;
-    }
+  article {
+    background-color: #fdff03;
+    flex-flow: column;
+  }
+}
+
+/*para mobil*/
+
+@media only screen and (max-width: 400px) {
+  header div.primer {
+    flex-flow: column;
   }
 
-  /*para mobil*/
-
-  @media only screen and (max-width: 400px) {
-
-    header div.primer{
-        flex-flow: column;
-    }
-   
-    article{
-        background-color: #FDE227;
-        flex-flow: column;
-    }
-
-    article section{
-        background-color: #0A516E;
-        display:flex;
-        flex: 1 1 100%;
-        flex-flow: column wrap;
-    }
-
-    article section div{
-        background-color: #61959C;
-    }
-
-    div.last{
-        background-color: #A3DDCB;
-    }
-
-    article aside{
-        background-color: #FC7B54;
-        flex: 1 1 auto;
-    }
-
-    article aside div{
-        background-color: #FCB36B;
-    }
+  article {
+    background-color: #fde227;
+    flex-flow: column;
   }
+
+  article section {
+    background-color: #0a516e;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column wrap;
+  }
+
+  article section div {
+    background-color: #61959c;
+  }
+
+  div.last {
+    background-color: #a3ddcb;
+  }
+
+  article aside {
+    background-color: #fc7b54;
+    flex: 1 1 auto;
+  }
+
+  article aside div {
+    background-color: #fcb36b;
+  }
+}
