@@ -1,0 +1,209 @@
+/*para ordenador*/
+
+* {
+  padding: 8px;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+footer,
+article {
+  background-color: black;
+}
+
+header div.primer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.xxss {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navegador {
+  flex: 6 1 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navenlace{
+  padding: 5px;
+}
+
+.navenlace:hover {
+  background-color: #e16459;
+  color: white;
+  font-size: larger;
+  border-radius: 50px;
+  height: 5rem;
+  padding: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+header div.segon {
+  background-color: #ccc6c6;
+  opacity: 0.7;
+ display: flex;
+ justify-content: center;
+ margin-top: 8%;
+ margin-left: 6%;
+ margin-right: 6%;
+ padding-bottom: 4%;
+ height: 4.5rem;
+}
+
+.title{
+  color: #e38258;
+  font-family: Times, serif;
+  font-weight: 10;
+  font-size: 28px;
+}
+
+footer div {
+  background-color: #e5af2d;
+}
+article {
+  display: flex;
+}
+
+article section {
+  background-color: #4e4e6a;
+  display: flex;
+  flex: 2 1 auto;
+  flex-flow: row wrap;
+}
+article section div {
+  background-color: #216bb0;
+  display: flex;
+  flex: 1 1 40%;
+}
+div.last {
+  background-color: #70a4c4;
+}
+article aside {
+  background-color: #f73e51;
+  flex: 1 1 auto;
+}
+
+article aside div {
+  background-color: #feea84;
+}
+
+.logoimg {
+  width: 4rem;
+}
+
+i {
+  color: #808080;
+}
+
+a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  padding: 1rem;
+  color: #808080;
+  text-decoration: none
+}
+
+.portadachina{
+  background-repeat:no-repeat;
+  background:url(images/header.jpg);
+  background: cover;
+  background-position: center center;
+  padding-bottom: 0%;
+}
+
+/*para tableta*/
+
+@media only screen and (max-width: 800px) {
+  article {
+    background-color: #fdff03;
+    flex-flow: column;
+  }
+
+  .title{
+    font-size: x-large;
+    margin:auto;
+  }
+
+  .segon div{
+    margin:auto;
+  }
+
+
+}
+
+
+/*para mobil*/
+
+@media only screen and (max-width: 500px) {
+  header div.primer {
+    flex-flow: column;
+  }
+
+  article {
+    background-color: #fde227;
+    flex-flow: column;
+  }
+
+  article section {
+    background-color: #0a516e;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column wrap;
+  }
+
+  article section div {
+    background-color: #61959c;
+  }
+
+  div.last {
+    background-color: #a3ddcb;
+  }
+
+  article aside {
+    background-color: #fc7b54;
+    flex: 1 1 auto;
+  }
+
+  article aside div {
+    background-color: #fcb36b;
+  }
+
+  .title{
+    font-size: large;
+    margin:auto;
+  }
+
+  .navenlace:hover {
+    background-color: transparent;
+    color: rgb(207, 97, 97);
+    padding: auto;
+    display: flex;
+    align-items: center;
+    font-size: auto;
+  }
+  .navegador, .xxss{
+    background-color: white;
+    border-radius: 10px;
+    padding: 0;
+    margin: 4px;
+  }
+
+  .logo{
+    display: flex;
+    justify-content: center;
+  }
+}
