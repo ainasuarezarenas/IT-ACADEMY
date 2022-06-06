@@ -51,7 +51,7 @@ header div.primer {
 }
 
 header div.segon {
-  background-color: #D8D7D7;
+  background-color: #d8d7d7;
   opacity: 0.7;
   display: flex;
   justify-content: center;
@@ -69,14 +69,14 @@ header div.segon {
   font-size: 30px;
   text-align: center;
 }
-footer{
-  background-color: #D8D7D7;
+footer {
+  background-color: #d8d7d7;
   padding-top: 0;
   padding-bottom: 0;
 }
 
 footer div {
-  background-color: #F4F1F1;
+  background-color: #f4f1f1;
   display: flex;
   justify-content: center;
   font-family: Arial, sans-serif;
@@ -84,7 +84,7 @@ footer div {
   color: #757373;
 }
 
-footer div p{
+footer div p {
   padding: 0;
   margin: 0;
 }
@@ -96,14 +96,14 @@ article {
 }
 
 article section {
-  background-color: #D8D7D7;
+  background-color: #d8d7d7;
   display: flex;
   flex-flow: row wrap;
   padding: 0%;
   flex-basis: 180%;
 }
 
-.cards{
+.cards {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -112,13 +112,13 @@ article section {
   position: relative;
 }
 
-article section div img{
-  max-width: 100%; 
+article section div img {
+  max-width: 100%;
   height: auto;
-  padding: 0%; 
+  padding: 0%;
 }
 
-.container{
+.container {
   height: 200px;
   overflow: hidden;
   position: relative;
@@ -126,48 +126,48 @@ article section div img{
   padding: 0;
 }
 
-.container > .crop{
-  position:absolute;
-    bottom: -20%;
-    min-height: 100%;
-    min-width: 100%;
+.container > .crop {
+  position: absolute;
+  bottom: -20%;
+  min-height: 100%;
+  min-width: 100%;
 }
 
-.fecha{
+.fecha {
   position: absolute;
   top: 186px;
   left: 14px;
   font-size: 18px;
   padding: 0;
   margin: 0;
-  color: #EDDE91;
+  color: #edde91;
   font-family: Arial, sans-serif;
 }
 
-.more{
+.more {
   padding: 8px;
   margin: 0;
-  color: #8E8E8E;
+  color: #8e8e8e;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 div.last {
-  background-color: #D8D7D7;
-  text-align:center;
+  background-color: #d8d7d7;
+  text-align: center;
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
 
-div.last p{
-  margin-block-start:0;
-  margin-block-end:0;
+div.last p {
+  margin-block-start: 0;
+  margin-block-end: 0;
   padding: 0%;
   padding-left: 4px;
   padding-right: 4px;
   font-size: 16px;
 }
 article aside {
-  background-color: #D8D7D7;
+  background-color: #d8d7d7;
   margin-left: 8px;
   flex-basis: 55%;
 }
@@ -180,22 +180,20 @@ article aside div {
   padding-bottom: 0%;
 }
 
-article aside div h3{
-margin-top: 20px;
-margin-bottom: 4px;
-font-family: Arial, sans-serif;
+article aside div h3 {
+  margin-top: 20px;
+  margin-bottom: 4px;
+  font-family: Arial, sans-serif;
 }
 
-
-article aside div p{
-margin: 0;
+article aside div p {
+  margin: 0;
   font-family: Arial, sans-serif;
 }
 
 .logoimg {
   width: 4rem;
 }
-
 
 i {
   color: #808080;
@@ -217,95 +215,92 @@ a {
   padding-bottom: 0%;
 }
 
-.subtitulos{
+.subtitulos {
   padding: 0;
   text-transform: uppercase;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 300;
   font-size: 22px;
-  background-color: #EF8080;
+  background-color: #ef8080;
   padding: 2%;
   padding-top: 3%;
   padding-bottom: 1%;
-  color: #FAF3EB;
+  color: #faf3eb;
   margin-top: 4px;
 }
 
-.description{
-column-count: 2;
-column-gap: 20px;
-column-rule: 1px solid #fff ;
-font-size: 16px;
-font-family: Arial, sans-serif;
-color: #696868;
-margin-top: 0;
-padding-top: 0;
-margin-bottom: 8px;
+.description {
+  column-count: 2;
+  column-gap: 20px;
+  column-rule: 1px solid #fff;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #696868;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 8px;
 }
 
 /*para ordenador pantalla de 1215 o menos o tableta*/
 
-@media only screen and (max-width: 1215px){
+@media only screen and (max-width: 1215px) {
   article section {
-    background-color: #D8D7D7;
+    background-color: #d8d7d7;
     display: flex;
     flex-flow: row wrap;
     padding: 0%;
     flex-basis: 140%;
   }
-  article aside{
+  article aside {
     flex-shrink: 2;
   }
-  
 }
 
-
-@media only screen and (max-width: 1073px){
+@media only screen and (max-width: 1073px) {
   article section {
-    background-color: #D8D7D7;
+    background-color: #d8d7d7;
     display: flex;
     flex-flow: row wrap;
     padding: 0%;
     flex-basis: 80%;
   }
-  
-  article{
+
+  article {
     flex-direction: column;
   }
 
-  article aside{
+  article aside {
     margin-left: 0;
     margin-top: 1%;
   }
 }
 
-@media only screen and (max-width: 921px){
+@media only screen and (max-width: 921px) {
   article section {
-    background-color: #D8D7D7;
+    background-color: #d8d7d7;
     display: flex;
     flex-direction: column;
     padding: 0%;
     flex-basis: 80%;
   }
 
-  .cards{
-      background-color: white;
-      display: flex;
-      flex-direction: column;
-      margin: 8px;
-      width: auto;
-      position: relative;
+  .cards {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    width: auto;
+    position: relative;
   }
-  
-  article{
+
+  article {
     flex-direction: column;
   }
 
-  article aside{
+  article aside {
     margin-left: 0;
     margin-top: 1%;
   }
-
 }
 
 /*para tableta*/
@@ -325,8 +320,6 @@ margin-bottom: 8px;
   }
 }
 
-
-
 @media only screen and (max-width: 600px) {
   header div.primer {
     flex-flow: column;
@@ -341,7 +334,6 @@ margin-bottom: 8px;
     flex-flow: column wrap;
     justify-content: center;
   }
-
 
   article aside {
     flex: 1 1 auto;
