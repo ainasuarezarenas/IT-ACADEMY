@@ -9,10 +9,9 @@ body {
   margin: 0 auto;
 }
 
-
 footer,
 article {
-  background-color: black;
+  background-color: white;
 }
 
 header div.primer {
@@ -35,14 +34,14 @@ header div.primer {
   align-items: center;
 }
 
-.navenlace{
+.navenlace {
   padding: 5px;
 }
 
 .navenlace:hover {
   background-color: #e16459;
   color: white;
-  font-size: larger;
+  font-size: large;
   border-radius: 50px;
   height: 5rem;
   padding: auto;
@@ -51,59 +50,152 @@ header div.primer {
   flex-wrap: wrap;
 }
 
-
 header div.segon {
-  background-color: #ccc6c6;
+  background-color: #D8D7D7;
   opacity: 0.7;
- display: flex;
- justify-content: center;
- margin-top: 8%;
- margin-left: 6%;
- margin-right: 6%;
- padding-bottom: 4%;
- height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+  margin-left: 6%;
+  margin-right: 6%;
+  padding-bottom: 4%;
+  height: 4.5rem;
 }
 
-.title{
+.title {
   color: #e38258;
   font-family: Times, serif;
   font-weight: 10;
-  font-size: 28px;
+  font-size: 30px;
+  text-align: center;
+}
+footer{
+  background-color: #D8D7D7;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 footer div {
-  background-color: #e5af2d;
+  background-color: #F4F1F1;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #757373;
+}
+
+footer div p{
+  padding: 0;
+  margin: 0;
 }
 article {
   display: flex;
+  padding-left: 0;
+  padding-right: 0;
+  flex: 3 1;
 }
 
 article section {
-  background-color: #4e4e6a;
+  background-color: #D8D7D7;
   display: flex;
-  flex: 2 1 auto;
   flex-flow: row wrap;
+  padding: 0%;
+  flex-basis: 180%;
 }
-article section div {
-  background-color: #216bb0;
+
+.cards{
+  background-color: white;
   display: flex;
-  flex: 1 1 40%;
+  flex-direction: column;
+  margin: 8px;
+  width: 46.4%;
+  position: relative;
 }
+
+article section div img{
+  max-width: 100%; 
+  height: auto;
+  padding: 0%; 
+}
+
+.container{
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.container > .crop{
+  position:absolute;
+    bottom: -20%;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.fecha{
+  position: absolute;
+  top: 186px;
+  left: 14px;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  color: #EDDE91;
+  font-family: Arial, sans-serif;
+}
+
+.more{
+  padding: 8px;
+  margin: 0;
+  color: #8E8E8E;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 div.last {
-  background-color: #70a4c4;
+  background-color: #D8D7D7;
+  text-align:center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+div.last p{
+  margin-block-start:0;
+  margin-block-end:0;
+  padding: 0%;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 16px;
 }
 article aside {
-  background-color: #f73e51;
-  flex: 1 1 auto;
+  background-color: #D8D7D7;
+  margin-left: 8px;
+  flex-basis: 55%;
 }
 
 article aside div {
-  background-color: #feea84;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+article aside div h3{
+margin-top: 20px;
+margin-bottom: 4px;
+font-family: Arial, sans-serif;
+}
+
+
+article aside div p{
+margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 .logoimg {
   width: 4rem;
 }
+
 
 i {
   color: #808080;
@@ -114,77 +206,150 @@ a {
   font-size: 14px;
   padding: 1rem;
   color: #808080;
-  text-decoration: none
+  text-decoration: none;
 }
 
-.portadachina{
-  background-repeat:no-repeat;
-  background:url(images/header.jpg);
+.portadachina {
+  background-repeat: no-repeat;
+  background: url(images/header.jpg);
   background: cover;
-  background-position: center center;
+  background-position: center 53%;
   padding-bottom: 0%;
+}
+
+.subtitulos{
+  padding: 0;
+  text-transform: uppercase;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  background-color: #EF8080;
+  padding: 2%;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  color: #FAF3EB;
+  margin-top: 4px;
+}
+
+.description{
+column-count: 2;
+column-gap: 20px;
+column-rule: 1px solid #fff ;
+font-size: 16px;
+font-family: Arial, sans-serif;
+color: #696868;
+margin-top: 0;
+padding-top: 0;
+margin-bottom: 8px;
+}
+
+/*para ordenador pantalla de 1215 o menos o tableta*/
+
+@media only screen and (max-width: 1215px){
+  article section {
+    background-color: #D8D7D7;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0%;
+    flex-basis: 140%;
+  }
+  article aside{
+    flex-shrink: 2;
+  }
+  
+}
+
+
+@media only screen and (max-width: 1073px){
+  article section {
+    background-color: #D8D7D7;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0%;
+    flex-basis: 80%;
+  }
+  
+  article{
+    flex-direction: column;
+  }
+
+  article aside{
+    margin-left: 0;
+    margin-top: 1%;
+  }
+}
+
+@media only screen and (max-width: 921px){
+  article section {
+    background-color: #D8D7D7;
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    flex-basis: 80%;
+  }
+
+  .cards{
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      margin: 8px;
+      width: auto;
+      position: relative;
+  }
+  
+  article{
+    flex-direction: column;
+  }
+
+  article aside{
+    margin-left: 0;
+    margin-top: 1%;
+  }
+
 }
 
 /*para tableta*/
 
 @media only screen and (max-width: 800px) {
   article {
-    background-color: #fdff03;
     flex-flow: column;
   }
 
-  .title{
+  .title {
     font-size: x-large;
-    margin:auto;
+    margin: auto;
   }
 
-  .segon div{
-    margin:auto;
+  .segon div {
+    margin: auto;
   }
-
-
 }
 
 
-/*para mobil*/
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   header div.primer {
     flex-flow: column;
   }
 
   article {
-    background-color: #fde227;
     flex-flow: column;
   }
 
   article section {
-    background-color: #0a516e;
     display: flex;
-    flex: 1 1 100%;
     flex-flow: column wrap;
+    justify-content: center;
   }
 
-  article section div {
-    background-color: #61959c;
-  }
-
-  div.last {
-    background-color: #a3ddcb;
-  }
 
   article aside {
-    background-color: #fc7b54;
     flex: 1 1 auto;
   }
 
-  article aside div {
-    background-color: #fcb36b;
-  }
-
-  .title{
+  .title {
     font-size: large;
-    margin:auto;
+    margin: auto;
   }
 
   .navenlace:hover {
@@ -195,14 +360,15 @@ a {
     align-items: center;
     font-size: auto;
   }
-  .navegador, .xxss{
+  .navegador,
+  .xxss {
     background-color: white;
     border-radius: 10px;
     padding: 0;
     margin: 4px;
   }
 
-  .logo{
+  .logo {
     display: flex;
     justify-content: center;
   }
