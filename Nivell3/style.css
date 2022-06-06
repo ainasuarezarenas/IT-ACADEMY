@@ -68,6 +68,8 @@ header div.segon {
   font-weight: 10;
   font-size: 30px;
   text-align: center;
+  animation: title 1s ease-in;
+  animation-delay: 1.5s;
 }
 footer {
   background-color: #d8d7d7;
@@ -124,6 +126,9 @@ article section div img {
   position: relative;
   margin: 0;
   padding: 0;
+  animation: moveSquare 2s;
+  animation-direction: alternate;
+  animation-delay: 1.5s;
 }
 
 .container > .crop {
@@ -193,11 +198,10 @@ article aside div p {
 
 .logoimg {
   width: 4rem;
+  position: static;
+  animation: logo 2s;
 }
 
-.logo {
-  color: #696868;
-}
 
 i {
   color: #808080;
@@ -368,4 +372,46 @@ a {
     display: flex;
     justify-content: center;
   }
+}
+
+@keyframes title {
+  0% {
+    opacity: 0;
+    transform: translateY(400px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveSquare {
+
+  0% {
+    transform: translateX(-200px);
+    transform: translateY(200px);
+    opacity: 0%;
+  }
+
+  100% {
+    transform: translateX(0);
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes logo{
+  
+  0% { 
+    width: 800px;
+    height: 800px;
+    background-color: #EE7463;
+    border-radius: 100%;
+  }
+  100%{
+    width: 4rem;
+    height: 4rem;
+  }
+
 }
