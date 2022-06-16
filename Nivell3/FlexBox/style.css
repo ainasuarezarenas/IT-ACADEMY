@@ -38,6 +38,19 @@ header div.primer {
   padding: 5px;
 }
 
+i {
+  color: #808080;
+}
+
+a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  padding: 1rem;
+  color: #808080;
+  text-decoration: none;
+}
+
+
 .navenlace:hover {
   background-color: #e16459;
   color: white;
@@ -200,19 +213,6 @@ article aside div p {
   width: 4rem;
   position: static;
   animation: logo 2s;
-}
-
-
-i {
-  color: #808080;
-}
-
-a {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 14px;
-  padding: 1rem;
-  color: #808080;
-  text-decoration: none;
 }
 
 .portadachina {
@@ -387,7 +387,6 @@ a {
 }
 
 @keyframes moveSquare {
-
   0% {
     transform: translateX(-200px);
     transform: translateY(200px);
@@ -401,17 +400,15 @@ a {
   }
 }
 
-@keyframes logo{
-  
-  0% { 
+@keyframes logo {
+  0% {
     width: 800px;
     height: 800px;
-    background-color: #EE7463;
+    background-color: #ee7463;
     border-radius: 100%;
   }
-  100%{
+  100% {
     width: 4rem;
     height: 4rem;
   }
-
 }
